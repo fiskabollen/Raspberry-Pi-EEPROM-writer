@@ -5,6 +5,8 @@ This Python module will control a Raspberry Pi such that it drives a circuit to 
 
 The circuit required is essentially a set of counter chips to hold an address chained (with a single increment line), plus a reset line.
 
+Run on the Pi with "sudo python eeprom.py --help"
+
 Raspberry Pi Pins
 -----------------
 
