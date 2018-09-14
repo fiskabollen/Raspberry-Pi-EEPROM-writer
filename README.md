@@ -3,7 +3,7 @@ Python module to use a Raspberry Pi to read/write to EEPROM
 
 This Python module will control a Raspberry Pi such that it drives a circuit to read and write to a parallel EEPROM such as a CAT28C65B or similar (13 address lines, 8 data lines, chip enable, output enable, write enable).
 
-The circuit required is three chained counter chips to hold a 12-bit address on A0-A11 (tie A12 low (or high if you want to write to the upper half)) with a single increment line, plus a reset line.
+The circuit required is three chained counter chips to hold a 12-bit address on A0-A11 (tie A12 low (or high if you want to write to the upper half)) with a single increment line to the lower 4 bits, plus a reset line.
 
 Run on the Pi with ``sudo python eeprom.py --help``
 
