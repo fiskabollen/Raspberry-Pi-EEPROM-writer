@@ -16,7 +16,7 @@ dump()
 
 Raspberry Pi Pins
 -----------------
-* `incr` is the increment line to the counter chips
+* `incr` is the increment line to the lowest counter chip
 * `reset` is the counter chips' reset line
 * `led` can control an LED
 * The other connections are on the EEPROM chip
