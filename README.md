@@ -5,13 +5,14 @@ This Python module will control a Raspberry Pi such that it drives a circuit to 
 
 The circuit required is three chained counter chips to hold a 12-bit address on A0-A11 (tie A12 low (or high if you want to write to the upper half)) with a single increment line to the lower 4 bits, plus a reset line.
 
-Run on the Pi with ``sudo python eeprom.py --help``
+The program has to be run with root privileges to access the GPIO pins. Run on the Pi with ``sudo python eeprom.py --help``
 
 Or use interactively in a Python shell:
 ```
-from writer import *
-find(0)
-dump()
+sudo python
+>>> from writer import *
+>>> find(0)
+>>> dump()
 ```
 
 Raspberry Pi Pins
